@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+    <link rel="canonical" href="" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Payment</title>
+
+    <!-- Meta SEO -->
+    <meta name="title" content="Landwind - Tailwind CSS Landing Page">
+    <meta name="description" content="Get started with a free and open-source landing page built with Tailwind CSS and the Flowbite component library.">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Themesberg">
+
+    <!-- Social media share -->
+    <meta property="og:title" content="Tax Payment Landing Page">
+    <meta property="og:site_name" content="Themesberg">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Get started with a free and open-source landing page for Tailwind CSS built with the Flowbite component library featuring dark mode, hero sections,  cards, and more.">
+    <meta property="og:type" content="">
+    <meta property="og:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/github/landwind/og-image.png">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@themesberg" />
+    <meta name="twitter:creator" content="@themesberg" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="./output.css" rel="stylesheet">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body>
+    <header class="fixed w-full" style="box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);">
+        <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
+        <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-10 mx-auto">
+            <a href="#" class="flex items-center">
+                <img src="./images/oirs.png" class="" alt="Tax Payment Logo" />
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
+            </a>
+            <div class="flex items-center lg:order-2">
+                <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+            <div class="items-center justify-end hidden w-full lg:flex lg:w-auto lg:order-2" id="mobile-menu-2">
+                <ul class="flex flex-col mt-5 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <li>
+                        <a href="index.html" class="block py-2 pl-3 pr-4   rounded lg:bg-transparent  lg:p-0 dark:text-white" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="block py-2 pl-3 pr-8 text-gray bg-gray-700 rounded lg:bg-transparent lg:text-gray-700 lg:p-0 dark:text-white">Corporate 
+                            <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Withholding Tax</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tax credits and incentives</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Deductions</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Other taxes</a>
+                              </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbar" data-dropdown-toggle="dropdownNav" class="block py-2 pl-3 pr-8 text-gray bg-gray-700 rounded lg:bg-transparent lg:text-gray-700 lg:p-0 dark:text-white">Individual 
+                            <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNav" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Taxes on personal income</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Income determination</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Residence tax</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Deductions</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tax administration</a>
+                              </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 pl-3 pr-4  border-b border-gray-100  lg:hover:bg-transparent lg:border-0 
+                        lg:hover:text-purple-600 lg:p-0">FAQs</a>
+                    </li>
+                    <li>
+                        <a href="#" class=" pl-3 pr-4 text-purple-600 border-b border-gray-600 hover:bg-gray-50" style="border: solid #090026 2px; padding: 10px; border-radius: 10px;">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <!-- Start block -->
+    <section class="bg-white dark:bg-gray-900 ">
+        <div class="grid max-w-screen-xl px-4   mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
+                      
+        </div>
+    </section>
+    <!-- End block -->
+
+        <!-- Start block -->
+        <section class="bg-white dark:bg-gray-900">
+            <div class="max-w-screen-xl mx-auto ">
+                <div class="max-w-screen-md mx-auto  text-center lg:mb-12">
+                    <h2 class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">We are glad you made the choice to be part of Osun State progress</h2>
+                    <p class="  text-gray-500 sm:text-xl dark:text-gray-400">Start  by filling the form below</p>
+                </div>
+                
+            </div>
+          </section>
+        <!-- End block -->
+
+
+    <!-- Start block -->
+    <section class="">
+        <div class="border-solid border-2 border-gray-300  max-w-screen-xl mx-auto  lg:px-6">
+            <div class="bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600  bg-gray-400 max-w-screen-sm mx-auto " style="border:  4px; padding: 50px; border-radius: 10px;">
+                <form>
+                    <div class="mb-6">
+                        <label for="MDA" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select MDA</label>
+                        <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                            
+                            <option value="">Individual</option>
+                            <option value="">Corporate </option>
+                        </select>
+                    </div> 
+                    <div class="mb-6">
+                        <label for="revenue" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select Revenue Code </label>
+                        <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                            <option value=""></option>
+                            <option value=""> </option>
+                            <option value=""></option>
+                        </select>
+                    </div> 
+                    <div class="mb-6">
+                        <label for="amount" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Amount</label>
+                        <input type="amount" id="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 
+                        dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter amount here" required>
+                    </div> 
+                    <div class="mb-6">
+                        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Narration</label>
+                        <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Type your message here..."></textarea>
+                     </div>
+                      <!-- Start block -->
+
+    <div class="max-w-screen-xl px-4  mx-auto mb-5">
+        <div class="grid grid-cols-2  text-gray-500  sm:grid-cols-3 lg:grid-cols-3 dark:text-gray-400">
+            <a href="#" class="flex items-center lg:justify-center">
+                <img src="./images/paystack.png">
+            </a>
+            <a href="#" class="flex items-center lg:justify-center">
+                <img src="./images/flutterwave.png"> 
+            </a>
+            <a href="#" class="flex items-center lg:justify-center">
+                <img src="./images/paypal.png">                
+            </a>
+
+            <a href="#" class="flex items-center lg:justify-center">
+                <img src="./images/etranzor.png">                                                                                  
+            </a>
+            <a href="#" class="flex items-center lg:justify-center">
+                <img src="./images/interswitch.png">                                                                             
+            </a>
+        </div>
+    </div>
+<!-- End block -->
+                  <div class="flex items-center lg:justify-center">
+                     <a href="entity-tax.html" class="text-white bg-purple-600 hover:bg-purple-600 focus:ring-4 focus:ring-purple-200 font-medium rounded-lg 
+                     text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-purple-900">Make Payment</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- End block -->
+
+   
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <script>
+        const moreTextEl = document.getElementById('more-text');
+        const toggleBtnEl = document.getElementById('toggle-btn');
+        const hideBtnEl = document.getElementById('hide-btn');
+    
+        toggleBtnEl.addEventListener('click', () => {
+            moreTextEl.classList.toggle('hidden');
+            toggleBtnEl.classList.toggle('hidden');
+            hideBtnEl.classList.toggle('hidden');
+        });
+    
+        hideBtnEl.addEventListener('click', () => {
+            moreTextEl.classList.toggle('hidden');
+            toggleBtnEl.classList.toggle('hidden');
+            hideBtnEl.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

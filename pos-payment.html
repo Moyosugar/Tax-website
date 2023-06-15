@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+    <link rel="canonical" href="" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Payment</title>
+
+    <!-- Meta SEO -->
+    <meta name="title" content="Landwind - Tailwind CSS Landing Page">
+    <meta name="description" content="Get started with a free and open-source landing page built with Tailwind CSS and the Flowbite component library.">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Themesberg">
+
+    <!-- Social media share -->
+    <meta property="og:title" content="Tax Payment Landing Page">
+    <meta property="og:site_name" content="Themesberg">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Get started with a free and open-source landing page for Tailwind CSS built with the Flowbite component library featuring dark mode, hero sections,  cards, and more.">
+    <meta property="og:type" content="">
+    <meta property="og:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/github/landwind/og-image.png">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@themesberg" />
+    <meta name="twitter:creator" content="@themesberg" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="./output.css" rel="stylesheet">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body>
+    <header class="fixed w-full" style="box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);">
+        <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
+        <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-10 mx-auto">
+            <a href="#" class="flex items-center">
+                <img src="./images/oirs.png" class="" alt="Tax Payment Logo" />
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
+            </a>
+            <div class="flex items-center lg:order-2">
+                <!-- <div class="hidden mt-2 mr-4 sm:inline-block">
+                    <a class="github-button" href="https://github.com/themesberg/landwind" data-size="large" data-icon="octicon-star" data-show-count="true" aria-label="Star themesberg/landwind on GitHub">Star</a>
+                </div>
+                <a href="#" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</a> -->
+                <!-- <a href="https://themesberg.com/product/tailwind-css/landing-page" class="text-white bg-purple-600 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-600 focus:outline-none dark:focus:ring-purple-800">Download</a> -->
+                <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+            <div class="items-center justify-end hidden w-full lg:flex lg:w-auto lg:order-2" id="mobile-menu-2">
+                <ul class="flex flex-col mt-5 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <li>
+                        <a href="index.html" class="block py-2 pl-3 pr-4   rounded lg:bg-transparent  lg:p-0 dark:text-white" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="block py-2 pl-3 pr-8 text-gray bg-gray-700 rounded lg:bg-transparent lg:text-gray-700 lg:p-0 dark:text-white">Corporate 
+                            <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Withholding Tax</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tax credits and incentives</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Deductions</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Other taxes</a>
+                              </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbar" data-dropdown-toggle="dropdownNav" class="block py-2 pl-3 pr-8 text-gray bg-gray-700 rounded lg:bg-transparent lg:text-gray-700 lg:p-0 dark:text-white">Individual 
+                            <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNav" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Taxes on personal income</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Income determination</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Residence tax</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Deductions</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tax administration</a>
+                              </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 pl-3 pr-4  border-b border-gray-100  lg:hover:bg-transparent lg:border-0 
+                        lg:hover:text-purple-600 lg:p-0">FAQs</a>
+                    </li>
+                    <li>
+                        <a href="#" class=" pl-3 pr-4 text-purple-600 border-b border-gray-600 hover:bg-gray-50" style="border: solid #090026 2px; padding: 10px; border-radius: 10px;">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <!-- Start block -->
+    <section class="bg-white dark:bg-gray-900 pt-6" >
+        <div class="grid    mx-auto   lg:grid-cols-12 ">
+        </div>
+    </section>
+    <!-- End block -->
+
+
+
+
+        <!-- Start block -->
+        <section class="bg-white dark:bg-gray-900" style="background-image: url('./images/poscard.png');  ">
+            <div class="max-w-screen-xl mx-auto mt-6" style="padding-bottom: 50px;">
+                <div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
+                    <h2 class="text-white mb-4 text-4xl font-extrabold tracking-tight text-gray-900 " style="padding-top: 100px; color: white;">Pay with POS</h2>
+                    <div class="flex h-screen w-full justify-center items-center mt-5 " style="padding-bottom: 15px;">
+                        <img src="./images/yellowline.png" >
+                    </div>
+                    <p class="text-white mb-5">Search for Field Officer near you</p>
+                    <form class=" flex h-screen w-full justify-center items-center mt-5">   
+                        <label for="simple-search" class="sr-only">Search by your local government </label>
+                        <div class="flex w-full" style="width: 50%;">
+                            <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 
+                            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search by your local government " required>
+                        </div>
+                        <button type="submit" class="relative p-2.5 ml-2 text-sm font-medium text-white bg-blue-700 rounded-lg border  focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                            <span class="sr-only">Search</span>
+                        </button>
+                    </form>
+                </div>
+                
+            </div>
+          </section>
+        <!-- End block -->
+  
+     
+    <!-- End block -->
+    <section class=" ">
+       
+      </section>
+
+       <!-- Start block -->
+    <section class="">
+        <div class=" max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:px-6">
+            <div class="border-gray-900 border-solid bg-gray-400  mx-auto">
+                
+<div class="relative overflow-x-auto" >
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400" style="width: 100%;">
+        <thead class="text-xs text-gray-700  bg-gray-50 dark:bg-gray-700 dark:text-gray-400" style="width: 100%;">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    S/N
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Field officer 
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Local Government Area (LGA)
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Tax Stations
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Town
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Agency Code
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    1
+                </th>
+                <td class="px-6 py-4" >
+                    Ibrahim Olusegun
+                </td>
+                <td class="px-6 py-4">
+                    Ede North
+                </td>
+                <td class="px-6 py-4">
+                    Okuku Tax Office
+                </td>
+                <td class="px-6 py-4">
+                    Osogbo
+                </td>
+                <td class="px-6 py-4">
+                   4170202
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    2
+                </th>
+                <td class="px-6 py-4">
+                    Shola Joseph
+                </td>
+                <td class="px-6 py-4">
+                    Modakeke South
+                </td>
+                <td class="px-6 py-4" >
+                    Gbongan Tax Office
+                </td>
+                <td class="px-6 py-4">
+                    Ife
+                </td>
+                <td class="px-6 py-4">
+                   4170202
+                </td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    3
+                </th>
+                <td class="px-6 py-4">
+                    John Doe
+                </td>
+                <td class="px-6 py-4">
+                    Ife East
+                </td>
+                <td class="px-6 py-4">
+                    Iwo Tax Office
+                </td>
+                <td class="px-6 py-4">
+                    Ede
+                </td>
+                <td class="px-6 py-4">
+                   4170202
+                </td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    4
+                </th>
+                <td class="px-6 py-4">
+                    Don Joe
+                </td>
+                <td class="px-6 py-4">
+                    Modakeke South
+                </td>
+                <td class="px-6 py-4">
+                    Gbongan Tax
+                    Office
+                </td>
+                <td class="px-6 py-4">
+                    Iperindo
+                </td>
+                <td class="px-6 py-4">
+                   4170202
+                </td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    5
+                </th>
+                <td class="px-6 py-4" >
+                    Ekpeyong Emmanuel
+                </td>
+                <td class="px-6 py-4">
+                    Modakeke South
+                </td>
+                <td class="px-6 py-4">
+                    Gbongan Tax Office
+                </td>
+                <td class="px-6 py-4">
+                    Owena
+                </td>
+                <td class="px-6 py-4">
+                   4170202
+                </td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    6
+                </th>
+                <td class="px-6 py-4">
+                    Philip Ojo
+                </td>
+                <td class="px-6 py-4">
+                    Modakeke South
+                </td>
+                <td class="px-6 py-4">
+                    Gbongan Tax Office
+                </td>
+                <td class="px-6 py-4">
+                    Iperindo
+                </td>
+                <td class="px-6 py-4">
+                   4170202
+                </td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                   7
+                </th>
+                <td class="px-6 py-4">
+                    Marvelous Olubunmi
+                </td>
+                <td class="px-6 py-4">
+                    Modakeke South
+                </td>
+                <td class="px-6 py-4">
+                    Gbongan Tax Office
+                </td>
+                <td class="px-6 py-4" >
+                    Iperindo
+                </td>
+                <td class="px-6 py-4" >
+                   4170202
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+                
+            </div>
+        </div>
+    </section>
+    <!-- End block -->
+   
+    
+   
+     
+   
+    <footer class="bg-gray-800 dark:bg-gray-800" style="background-color:#791A0F; ">
+        <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 ">
+            <div class="grid grid-cols-2 gap-8 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4">
+                <div>
+                    <a href="#" class="flex items-center justify-center mb-5 font-semibold text-white dark:text-white">
+                        <img src="./images/oirs.png" class="h-6 mr-3 sm:h-9" alt=" Logo" />
+                        OSUN STATE INTERNAL REVENUE SERVICE    
+                    </a>
+                    <ul class="text-white">
+                        <li class="mb-4">
+                            <p class="">Osun Internal Revenue Service is the revenue collecting arm of the State Government of Osun saddled with the responsibility of collecting Taxes, Charges and Levies.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="mb-6 pl-5 text-lg font-semibold text-white">Quick Links</h1>
+                    <ul class="text-white pl-5">
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">About </a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">FAQs</a>
+                        </li>
+                        <li class="mb-4">
+                         <a href="#" class="hover:underline">Blog</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Tax Stations</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline"> Individual tax</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline"> Corporate Tax </a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline"> Sector Tax</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="mb-6 text-lg font-semibold text-white dark:text-white">Legal</h1>
+                    <ul class="text-white">
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Terms  </a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Privacy</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Security</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="mb-6 text-lg font-semibold text-white dark:text-white">Contact</h1>
+                    <ul class="text-white">
+                        <li class="mb-4">
+                            <a href="#" class="flex dark:text-white">
+                               <span class="flex"> Omoluabi Holdings Limited Building, Beside State Secretariat, Abere, State of Osun </span>   
+                            </a>
+                            
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+                                Instagram</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                                Twitter</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline"><img src="./images/whatsapp.svg"> WhatsApp</a>
+                        </li>
+                    </ul>
+                </div>
+        
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+            <div class=" text-white text-center">
+                 <a href="#" class="flex items-center justify-center mb-1 font-semibold text-gray-900 dark:text-white">
+                    <span class="block text-sm text-center text-white dark:text-gray-400">© Osun State internal Revenue Service.  Powered by </span>&nbsp; <img src="./images/ecc.png" class="h-6 mr-3 sm:h-9" alt="Logo" />
+                </a> 
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <script>
+        const moreTextEl = document.getElementById('more-text');
+        const toggleBtnEl = document.getElementById('toggle-btn');
+        const hideBtnEl = document.getElementById('hide-btn');
+    
+        toggleBtnEl.addEventListener('click', () => {
+            moreTextEl.classList.toggle('hidden');
+            toggleBtnEl.classList.toggle('hidden');
+            hideBtnEl.classList.toggle('hidden');
+        });
+    
+        hideBtnEl.addEventListener('click', () => {
+            moreTextEl.classList.toggle('hidden');
+            toggleBtnEl.classList.toggle('hidden');
+            hideBtnEl.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
